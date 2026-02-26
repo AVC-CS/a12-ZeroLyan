@@ -1,0 +1,31 @@
+=== MEMORY SEGMENT BOUNDARIES ===
+
+--- STACK SEGMENT (Cross-function comparison) ---
+Value of parentAddr: 0x7ffccb0c7aa4
+Address of childVar: 0x7ffccb0c7a84
+Stack grows: DOWN
+
+--- TEXT SEGMENT (Code) ---
+Address of main(): 0x56dbc13e9357
+Address of checkStack(): 0x56dbc13e9209
+
+--- DATA SEGMENT (Initialized Globals) ---
+Value of globalInt1: 100
+Address of globalInt1: 0x56dbc13ec010
+Value of globalInt2: 150
+Address of globalInt2: 0x56dbc13ec014
+
+--- BSS SEGMENT (Uninitialized Globals) ---
+Value of globalInt3: 0
+Address of globalInt3: 0x56dbc13ec154
+Value of globalInt4: 0
+Address of globalInt4: 0x56dbc13ec158
+
+--- HEAP SEGMENT (Dynamic Allocation) ---
+Address of heapVar1: 0x56dbeceaf2b0
+Address of heapVar2: 0x56dbeceaf6c0
+Heap grows: UP
+
+=== RELATIVE POSITION SUMMARY ===
+The STACK is at a HIGHER address than the HEAP.
+The HEAP is at a HIGHER address than the STATIC segment.
